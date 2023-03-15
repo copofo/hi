@@ -1,0 +1,11 @@
+div{
+  width: 100%;
+  text-align: center;
+  margin-top: 3em;
+}
+
+#btn-ronda:active{
+  background: green;
+  color: white;
+  font-weight:  bold;
+}
