@@ -15,6 +15,9 @@ if(navigator.geolocation){
 }
 
 function mostrar(pos){
+  
+  
+  
  console.log(`Latitude: ${pos.coords.latitude} Lingitude: ${ pos.coords.longitude} `)
 
 }
