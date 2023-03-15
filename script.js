@@ -1,13 +1,12 @@
-const lat = document.getElementById("lat")
-const lon = document.getElementById("lon")
-
+var lat = document.getElementById("lat")
+var lon = document.getElementById("lon")
   
  
 
 
 
 if(navigator.geolocation){
- navigator.geolocation.getCurrentPosition(mostrar)
+ 
 
 }else{
  alert("localização desligada!")
@@ -16,8 +15,10 @@ if(navigator.geolocation){
 
 function mostrar(pos){
   
+  navigator.geolocation.getCurrentPosition(mostrar)
+  lat.innerHTML = pos.coords.latitude
+  lon.innerHTML = pos.coords.longitude
   
   
- console.log(`Latitude: ${pos.coords.latitude} Lingitude: ${ pos.coords.longitude} `)
-
+  
 }
